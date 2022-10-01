@@ -1,0 +1,4 @@
+server:
+  port: 8101
+ms-worker: 
+  url: 'http://localhost:8001/'
