@@ -21,14 +21,14 @@ public class WorkersController {
         return ResponseEntity.ok(worker);
     }
   
-    }
-    @GetMapping("/id/salary")
+    
+    @GetMapping("/{id}/salary")
     public ResponseEntity<Double> getSalaryWorker(@PathVariable Integer id){
-        var worker  = new Worker();
-        return ResponseEntity.ok(worker.getSalary())
+        var worker  = new Workers(id);
+        return ResponseEntity.ok(worker.getSalary());
     }
     
-    
+} 
 
     
-}
+
